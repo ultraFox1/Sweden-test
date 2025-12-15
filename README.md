@@ -28,4 +28,10 @@ cd frontend
 
 npm install
 
+если выдает ошибку 
+
+npm uninstall date-fns 
+
+pm install date-fns@^3.0.0
+
 npm start
