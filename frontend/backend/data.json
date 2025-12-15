@@ -1,0 +1,195 @@
+[
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$jlvqsPTsqmSvf7Dpq6yF6C$zGF4Hg3u/8bdxDGXqyMFbR0BDGvzy1jCD8EAx4+Y8EM=",
+    "last_login": "2025-12-14T12:30:29.560Z",
+    "is_superuser": true,
+    "login": "admin",
+    "email": "admim@email.com",
+    "avatar": "",
+    "is_active": true,
+    "is_staff": true,
+    "date_joined": "2025-12-14T12:29:41.294Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$zqY5LDnDblnOVoLtLbKMn8$KJTpwQ/naKXzREsA5PM38iHnibcQlML9kWzwy8eu9pw=",
+    "last_login": null,
+    "is_superuser": false,
+    "login": "user@test.com",
+    "email": "user@test.com",
+    "avatar": "",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-12-15T11:56:57.778Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$zjEMb4r44vpoE1KBEiDkTm$T1nRoR4uq4PqNrBJuY611WMCqmGyadSVwWvRtHi7EhU=",
+    "last_login": "2025-12-15T14:29:25.870Z",
+    "is_superuser": true,
+    "login": "admin@test.com",
+    "email": "admin@test.com",
+    "avatar": "",
+    "is_active": true,
+    "is_staff": true,
+    "date_joined": "2025-12-15T11:59:21.284Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.trip",
+  "pk": 3,
+  "fields": {
+    "title": "Стокгольм",
+    "description": "1",
+    "price": "24000.00",
+    "image": "",
+    "date_start": "2025-12-14",
+    "date_end": "2025-12-24",
+    "created_at": "2025-12-14T12:57:11.399Z"
+  }
+},
+{
+  "model": "users.trip",
+  "pk": 4,
+  "fields": {
+    "title": "Гётеборг",
+    "description": "1",
+    "price": "28000.00",
+    "image": "",
+    "date_start": "2025-12-15",
+    "date_end": "2025-12-24",
+    "created_at": "2025-12-15T10:54:53.956Z"
+  }
+},
+{
+  "model": "users.trip",
+  "pk": 5,
+  "fields": {
+    "title": "Мальмё",
+    "description": "1",
+    "price": "27000.00",
+    "image": "",
+    "date_start": "2025-12-15",
+    "date_end": "2025-12-25",
+    "created_at": "2025-12-15T10:55:11.788Z"
+  }
+},
+{
+  "model": "users.trip",
+  "pk": 6,
+  "fields": {
+    "title": "Упсала",
+    "description": "1",
+    "price": "28000.00",
+    "image": "",
+    "date_start": "2025-12-15",
+    "date_end": "2025-12-27",
+    "created_at": "2025-12-15T10:55:36.012Z"
+  }
+},
+{
+  "model": "users.trip",
+  "pk": 7,
+  "fields": {
+    "title": "Лунд",
+    "description": "1",
+    "price": "25000.00",
+    "image": "",
+    "date_start": "2025-12-15",
+    "date_end": "2025-12-31",
+    "created_at": "2025-12-15T11:02:07.801Z"
+  }
+},
+{
+  "model": "users.booking",
+  "pk": 17,
+  "fields": {
+    "user": 4,
+    "trip": 7,
+    "persons": 1,
+    "total_price": "20000.00",
+    "status": "created",
+    "booking_date": "2025-12-15T12:10:47.560Z"
+  }
+},
+{
+  "model": "users.offer",
+  "pk": 4,
+  "fields": {
+    "title": "Москва-Стокгольм",
+    "description": "Стокго́льм (швед. [stɔkːhɔlm]) — столица и крупнейший город Швеции. Расположен на протоках, соединяющих озеро Меларен с Балтийским морем.",
+    "discount_percent": 25,
+    "trip": 3,
+    "image": "offers/Снимок_экрана_2025-12-15_150046.png",
+    "is_active": true,
+    "created_at": "2025-12-14T12:57:30.483Z"
+  }
+},
+{
+  "model": "users.offer",
+  "pk": 5,
+  "fields": {
+    "title": "Казань-Упсала",
+    "description": "У́ппсала — старинный город в Швеции, административный центр одноимённых лена и коммуны. Расположен в исторической провинции Уппланд в 70 км к северу от Стокгольма.",
+    "discount_percent": 15,
+    "trip": 6,
+    "image": "offers/Снимок_экрана_2025-12-15_145634.png",
+    "is_active": true,
+    "created_at": "2025-12-15T10:56:57.802Z"
+  }
+},
+{
+  "model": "users.offer",
+  "pk": 6,
+  "fields": {
+    "title": "Казань-Мальмё",
+    "description": "Ма́льмё — третий по численности населения город Швеции. Расположен в её южном административном регионе — Сконе, административным центром которого он является. Мальмё — также крупнейший город исторической провинции Сконе и культурно-исторического региона Скания.",
+    "discount_percent": 30,
+    "trip": 5,
+    "image": "offers/Снимок_экрана_2025-12-15_145807.png",
+    "is_active": true,
+    "created_at": "2025-12-15T10:58:14.648Z"
+  }
+},
+{
+  "model": "users.offer",
+  "pk": 7,
+  "fields": {
+    "title": "Москва-Гётерборг",
+    "description": "Гётеборг – крупный город в Швеции, расположенный на западном побережье страны в устье реки Гёта-Эльв. Это важный морской порт, известный своими каналами в голландском стиле и тенистыми бульварами, среди которых – Авенин, главная магистраль города, с множеством кафе и магазинов.",
+    "discount_percent": 20,
+    "trip": 4,
+    "image": "offers/Снимок_экрана_2025-12-15_145940.png",
+    "is_active": true,
+    "created_at": "2025-12-15T11:00:05.337Z"
+  }
+},
+{
+  "model": "users.offer",
+  "pk": 8,
+  "fields": {
+    "title": "Москва-Лунд",
+    "description": "Лунд — город на юге Швеции, в лене Сконе, центр одноимённой коммуны. Название города переводится на русский язык как «роща». На основании археологических раскопок установлено, что предшественником Лунда в железном веке было поселение, расположенное невдалеке в местечке Уппокра",
+    "discount_percent": 20,
+    "trip": 7,
+    "image": "offers/Снимок_экрана_2025-12-15_150248.png",
+    "is_active": true,
+    "created_at": "2025-12-15T11:02:55.966Z"
+  }
+}
+]
