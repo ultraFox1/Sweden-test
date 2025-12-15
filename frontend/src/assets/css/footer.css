@@ -1,0 +1,36 @@
+footer {
+  background: #003b49;
+  padding: 60px 0;
+  color: white;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.cards-grid_2 {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.card_2 {
+  width: 33%;
+}
+
+.card_2 h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card_2 a {
+  display: block;
+  margin-top: 6px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.card_2 a:hover {
+  text-decoration: underline;
+}

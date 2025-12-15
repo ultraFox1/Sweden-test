@@ -1,0 +1,99 @@
+/* ОБРАТНАЯ СВЯЗЬ */
+
+.help-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 80px 15px 120px;
+}
+
+.help-form-container {
+  width: 100%;
+  max-width: 780px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(15, 35, 52, 0.06);
+  padding: 40px 50px 45px;
+  box-sizing: border-box;
+}
+
+.help-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #36394c;
+}
+
+/* поля */
+
+.help-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.help-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.help-input,
+.help-textarea {
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  font-size: 14px;
+  background-color: #f7f8ff;
+  box-sizing: border-box;
+}
+
+.help-input::placeholder,
+.help-textarea::placeholder {
+  color: #9fa5b5;
+}
+
+.help-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.help-hint {
+  font-size: 12px;
+  color: #9fa5b5;
+}
+
+/* кнопка */
+
+.help-submit {
+  margin-top: 10px;
+  align-self: center;
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #00d1b2;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.help-submit:hover {
+  background-color: #00bfa2;
+}
+
+/* адаптив */
+
+@media (max-width: 600px) {
+  .help-form-container {
+    padding: 25px 20px 30px;
+  }
+
+  .help-title {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,352 @@
+.cabinet-page {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  gap: 30px;
+  background: #f6f6f6;
+}
+
+/* ===== ПРОФИЛЬ ===== */
+
+.cabinet-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 360px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.cabinet-avatar {
+  margin-bottom: 20px;
+}
+
+.cabinet-avatar img,
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  margin: 0 auto;
+}
+
+.cabinet-login {
+  margin: 10px 0 5px;
+  font-size: 22px;
+}
+
+.cabinet-email {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===== ЗАГРУЗКА АВАТАРА ===== */
+
+.cabinet-upload {
+  margin: 20px 0;
+}
+
+.cabinet-upload input {
+  margin-bottom: 10px;
+}
+
+.cabinet-upload button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #2b7cff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cabinet-upload button:hover {
+  background: #1f63d1;
+}
+
+/* ===== ВЫХОД ===== */
+
+.cabinet-logout {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #ff4d4f;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cabinet-logout:hover {
+  background: #d9363e;
+}
+
+/* ===== ЗАЯВКИ ===== */
+
+.cabinet-orders {
+  width: 600px;
+  max-width: 90%;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.cabinet-orders h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* ===== ПУСТОЕ СОСТОЯНИЕ ===== */
+
+.orders-empty {
+  text-align: center;
+  color: #777;
+}
+
+.orders-empty span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #aaa;
+}
+.order-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  margin-bottom: 15px;
+}
+
+.order-card h4 {
+  margin-bottom: 8px;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.status-created {
+  background: #e6f0ff;
+  color: #1e7cff;
+}
+
+.status-confirmed {
+  background: #e6ffe6;
+  color: #1a8f1a;
+}
+
+.status-cancelled {
+  background: #ffe6e6;
+  color: #cc0000;
+}
+/* ===== МОИ ПОЕЗДКИ ===== */
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.order-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+/* Заголовок */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.order-header h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Статусы */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-created {
+  background: #e6f0ff;
+  color: #1e7cff;
+}
+
+.status-approved {
+  background: #e6fff2;
+  color: #1aa36f;
+}
+
+.status-rejected {
+  background: #ffeaea;
+  color: #d64545;
+}
+
+/* Информация */
+.order-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.order-info span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.order-info b {
+  font-size: 15px;
+}
+
+/* Пусто */
+.orders-empty {
+  background: #f7f9fc;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  color: #666;
+}
+/* timeline */
+.status-timeline {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  gap: 8px;
+}
+
+.status-timeline .step {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #eee;
+  color: #777;
+}
+
+.status-timeline .step.active {
+  background: #1e7cff;
+  color: white;
+}
+
+.status-timeline .step.cancelled {
+  background: #ff4d4f;
+  color: white;
+}
+
+.status-timeline .line {
+  flex: 1;
+  height: 2px;
+  background: #ddd;
+}
+
+/* кнопка отмены */
+.order-cancel {
+  margin-top: 12px;
+  background: transparent;
+  border: 1px solid #ff4d4f;
+  color: #ff4d4f;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.order-cancel:hover {
+  background: #ff4d4f;
+  color: white;
+}
+/* TIMELINE */
+.timeline {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Шаг */
+.step {
+  background: #e0e0e0;
+  color: #777;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
+/* Активный шаг */
+.step.active {
+  background: #1e7cff;
+  color: white;
+  opacity: 1;
+  transform: scale(1.05);
+  animation: pulse 0.6s ease;
+}
+
+/* Отменено */
+.step.cancelled {
+  background: #ff4d4f;
+  color: white;
+  opacity: 1;
+}
+
+/* Линия */
+.line {
+  width: 40px;
+  height: 3px;
+  background: #ddd;
+  margin: 0 6px;
+  border-radius: 4px;
+  transition: background 0.4s ease;
+}
+
+/* Активная линия */
+.line.active {
+  background: #1e7cff;
+}
+
+/* Линия отмены */
+.line.cancelled {
+  background: #ff4d4f;
+}
+
+/* Анимация */
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,79 @@
+/* Верхняя синяя полоса */
+.navbar_up {
+  background: #003b49;
+  padding: 6px 20px;
+}
+
+.navbar_up ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_up a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Основной хедер */
+.header {
+  width: 100%;
+}
+
+.container_header {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-img {
+  width: 180px;
+}
+
+.user-icon {
+  width: 40px;
+}
+
+.btn_1 {
+  text-decoration: none;
+  color: #003b49;
+  font-size: 18px;
+  font-weight: 500;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.header.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.header.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+

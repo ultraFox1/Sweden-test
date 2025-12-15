@@ -1,0 +1,196 @@
+/* =========================
+   Общий контейнер
+========================= */
+.tour-search {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* =========================
+   Форма поиска
+========================= */
+.tour-form {
+  display: inline-flex;     
+  gap: 10px;
+  background: #1e7cff;
+  padding: 15px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+
+/* =========================
+   Select
+========================= */
+.tour-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  min-width: 160px;
+}
+
+/* =========================
+   Обёртка поля "Когда"
+========================= */
+.date-input-wrapper {
+  position: relative; 
+}
+
+/* =========================
+   Поле "Когда"
+========================= */
+.date-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  min-width: 160px;
+  background: white;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* =========================
+   Выпадающий блок дат
+========================= */
+.date-range-box {
+  position: absolute;      
+  top: 50px;                
+  left: 0;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: 360px;
+  z-index: 1000;           
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   Поля дат
+========================= */
+.date-range-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.date-range-fields input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* =========================
+   Кнопка выбора диапазона
+========================= */
+.date-apply {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #ff7a00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* =========================
+   Кнопка "Найти поездки"
+========================= */
+.tour-form button {
+  background: #ff7a18;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* =========================
+   Сообщение
+========================= */
+.tour-message {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* =========================
+   Популярные направления
+========================= */
+.tour-popular {
+  margin-top: 40px;
+}
+
+.tour-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.tour-item {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.tour-item:hover {
+  transform: translateY(-3px);
+}
+
+.tour-item span {
+  display: block;
+  color: #777;
+  font-size: 14px;
+}
+/* Поле количества пассажиров */
+.persons-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  min-width: 120px;
+  background: white;
+  text-align: center;
+}
+.booking-steps {
+  margin: 80px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.booking-steps h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.step-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.step-number {
+  display: inline-block;
+  background: #1e7cff;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  line-height: 36px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
